@@ -15,7 +15,16 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+       let num = document.getElementById("number").value;
+       let result = num;
+
+       for (let i = 1; i < num  ; i++) {
+           
+            result = result * i;
+            
+           
+       }
+       console.log(result);
 
     });
 
