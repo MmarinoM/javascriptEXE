@@ -11,6 +11,22 @@
 
 (function() {
 
-    // your code here
+    for (let index = 1; index < 101; index++) {
+        if(index % 3 == 0){
+            if(index % 5 == 0){
+                console.log(index + "fizzbuzz");
+            }
+            else{
+                console.log(index + "fizz");
+            }
+        }else{
+            if(index % 5 == 0){
+                console.log(index + "buzz");
+            }else{
+                console.log(index);
+            }
+        }
+        
+    }
 
 })();
