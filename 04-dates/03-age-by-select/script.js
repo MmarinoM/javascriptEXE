@@ -10,7 +10,38 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function(){
 
-    // your code here
+        let dayUser = document.getElementById("dob-day").value;
+        let monthUser = document.getElementById("dob-month").value;
+        let yearUser = document.getElementById("dob-year").value;
+
+
+        let totalDateUser = new Date(yearUser,monthUser,dayUser);
+        let now = new Date();
+
+
+        let totalDateUserMilli = totalDateUser.getTime();
+        let nowMilli = now.getTime();
+
+
+
+        let ageCalcul = nowMilli - totalDateUserMilli; 
+
+
+
+        let ageFinal = Math.floor(ageCalcul/31536000000);
+
+
+
+        console.log(totalDateUser);
+        console.log(totalDateUserMilli);
+        console.log(nowMilli);
+        console.log(ageFinal);
+
+        alert("Vous avez "+ageFinal+" ans");
+       
+    });
+    
 
 })();
