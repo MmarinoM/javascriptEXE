@@ -10,9 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
+    let options = {
+        weekday: 'long', 
+        day: 'numeric', 
+        month: 'long', 
+        year: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric'
+    };
+    let date = new Date();
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    
 
-    // your code here
+    document.getElementById("target").innerHTML = date.toLocaleDateString("en-UK", options);
 
+    
+    
 })();
