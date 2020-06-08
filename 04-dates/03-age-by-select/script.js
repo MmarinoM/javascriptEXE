@@ -13,11 +13,12 @@
     document.getElementById("run").addEventListener("click", function(){
 
         let dayUser = document.getElementById("dob-day").value;
-        let monthUser = document.getElementById("dob-month").value;
+        let monthUser = Number( document.getElementById("dob-month").value);
+        let monthUserGOOD = monthUser - 1 ;
         let yearUser = document.getElementById("dob-year").value;
 
 
-        let totalDateUser = new Date(yearUser,monthUser,dayUser);
+        let totalDateUser = new Date(yearUser,monthUserGOOD,dayUser);
         let now = new Date();
 
 
@@ -33,7 +34,8 @@
         let ageFinal = Math.floor(ageCalcul/31536000000);
 
 
-
+        console.log(monthUser);
+        console.log(monthUserGOOD);
         console.log(totalDateUser);
         console.log(totalDateUserMilli);
         console.log(nowMilli);
