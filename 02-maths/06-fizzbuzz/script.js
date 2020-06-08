@@ -14,14 +14,14 @@
     for (let index = 1; index < 101; index++) {
         if(index % 3 == 0){
             if(index % 5 == 0){
-                console.log(index + "fizzbuzz");
+                console.log("fizzbuzz");
             }
             else{
-                console.log(index + "fizz");
+                console.log("fizz");
             }
         }else{
             if(index % 5 == 0){
-                console.log(index + "buzz");
+                console.log("buzz");
             }else{
                 console.log(index);
             }
