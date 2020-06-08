@@ -26,5 +26,5 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    computers.forEach(element => console.log(element));
 })();
