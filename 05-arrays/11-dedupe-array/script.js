@@ -27,7 +27,20 @@
         "raisin",
         "cerise",
     ];
+    document.getElementById("run").addEventListener("click", function(){
+        
+        let unique = [...new Set(fruits)];
+         console.log(unique);
 
-    // your code here
+         function onlyUnique(value, index, self) { 
+            return self.indexOf(value) === index;
+        }
+
+        console.log(fruits.filter(onlyUnique));
+
+        
+    });
+
+    
 
 })();

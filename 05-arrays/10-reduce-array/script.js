@@ -89,6 +89,11 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        
+        const reducer = (acc, current)=> {console.log(current); return acc + current};
+         
+        
+    });
 
 })();
