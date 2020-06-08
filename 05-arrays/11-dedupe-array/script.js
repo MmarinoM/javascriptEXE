@@ -28,10 +28,10 @@
         "cerise",
     ];
     document.getElementById("run").addEventListener("click", function(){
-        
+        // technique 1
         let unique = [...new Set(fruits)];
          console.log(unique);
-
+        // technique 2
          function onlyUnique(value, index, self) { 
             return self.indexOf(value) === index;
         }

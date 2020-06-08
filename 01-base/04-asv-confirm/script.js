@@ -13,12 +13,13 @@
     let age = null;
     let gender = null;
     let town = null;
+    let confirmation = null;
     do{
         age = prompt("How old are you?");
         gender = prompt("Gender ?");
         town = prompt("where do you live?");
         alert("You're "+age+" years old "+"You come from "+town+" and you're a "+gender+".");
-        confirm("is it right?")
-    }while (confirm =! true);
+        confirmation = confirm("is it right?");
+    }while (confirmation != true);
 
 })();

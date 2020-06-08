@@ -22,5 +22,16 @@
         "Lucas",
     ]);
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let size = people.size;
+        console.log(size);
+
+        let alex = people.has("Alexandre");
+
+        if(alex == true){
+            console.log("Il y a un alexandre");
+        }else{
+            console.log("Il n'y a pas d'alexandre");
+        }
+    });
 })();
