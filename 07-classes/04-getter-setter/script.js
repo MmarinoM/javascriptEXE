@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
+    class Person{
+        constructor(firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+
+            
+        }
+        get getterName() {return firstname + " " + lastname;}
+        set setterName() {return getterName().split('');}
+        
+    }
     // your code here
 })();
