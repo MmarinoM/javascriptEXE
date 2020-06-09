@@ -24,6 +24,10 @@
     ]);
 
     document.getElementById("run").addEventListener("click", function(){
-        
+        fruits.delete('cherry');
+        fruits.delete('apple');
+        fruits.add('kiwi');
+        fruits.add('banana');
+        console.log(fruits);
     });
 })();
