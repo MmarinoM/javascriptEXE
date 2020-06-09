@@ -15,11 +15,13 @@
             this.firstname = firstname;
             this.lastname = lastname;
             this.sayHello = function(){
-                return "Hello, "+this.firstname + " " + this.lastname;
+                return "Hello, "+this.firstname + " " + this.lastname+"!";
             }
         }
     }
-
+document.getElementById('run').addEventListener("click", function(){
     let client = new Person("michael", "marino");
     console.log(client.sayHello());
+});
+    
 })();
