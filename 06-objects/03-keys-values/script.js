@@ -20,7 +20,11 @@
     };
     
     document.getElementById("run").addEventListener("click", function(){
-        
+        for (const property in person){
+            console.log(property +" "+ person[property]);
+            
+        }
+
     });
     
 })();
