@@ -11,6 +11,33 @@
 
 (function() {
 
-    // your code here
+    
+    function table(num){
+        let tableNum = new Array();
+        for (let index = 1; index < 11; index++) {
+            tableNum[index-1] = num * (index);
+            return tableNum;
+        }
+
+    }
+    let tab =document.createElement("table");
+    // let row = document.createElement("tr");
+    // let col = document.createElement("th");
+    let p = document.createElement("p");
+
+    document.getElementById("target").appendChild(tab);
+    for (let index = 0; index < 10; index++) {
+
+        let row = tab.insertRow(index);
+        for (let i = 0; i < 10; i++) {
+            let multi = table(i+1);
+            console.log(multi);
+            let cell = row.insertCell(i);
+            cell.innerHTML = (i+1)*(index+1);
+        }
+        
+
+        
+    }
 
 })();

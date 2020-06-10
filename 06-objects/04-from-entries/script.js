@@ -14,8 +14,7 @@
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     
     document.getElementById("run").addEventListener("click", function(){
- 
-
+        
         const keysValue = Object.fromEntries(keys.map((_, i) => [keys[i], values[i]]));
         console.log(keysValue);
     });
