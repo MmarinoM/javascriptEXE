@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+    let test =  document.querySelector('img').dataset.hover;
+    let imgSrc = document.querySelector('img').src;
+    console.log(imgSrc);
+    console.log(test);
+
+    document.querySelector('img').addEventListener("mouseover", function(){
+        document.querySelector('img').src = test;
+    });
+     document.querySelector('img').addEventListener("mouseout", function(){
+         document.querySelector('img').src = imgSrc;
+     });
 
 })();

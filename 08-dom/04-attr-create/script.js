@@ -11,7 +11,7 @@
 
 (function() {
 
-   let test =  document.getElementById("source").dataset.image
+   let test =  document.getElementById("source").dataset.image;
 //    console.log(test);
    let img =document.createElement("img");
    img.src = test;

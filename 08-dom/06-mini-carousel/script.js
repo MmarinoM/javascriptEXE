@@ -18,7 +18,16 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
+    i = 1 ;
+    
+    document.getElementById("next").addEventListener("click", function(){
+        
+        document.querySelector('img').src = gallery[i];
+        i++;
+        if(i == gallery.length){
+            i=0;
+        }
 
-    // your code here
+    });
 
 })();
