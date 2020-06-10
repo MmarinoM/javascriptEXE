@@ -30,7 +30,7 @@
         
         computers.forEach(element => {
             
-            if(!element.available) element.available = defaultProps.available;
+            if(element.available == null) element.available = defaultProps.available;
             
             if(!element.user) element.user = defaultProps.user ;
             

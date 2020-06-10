@@ -8,9 +8,11 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
+//document.getElementsByClassName('nomClass')
+// document.getElementsByTagName('p')
+// document.querySelector('#run')
 (function() {
 
-    // your code here
+    document.querySelector('#target').innerHTML = "owned";
 
 })();
