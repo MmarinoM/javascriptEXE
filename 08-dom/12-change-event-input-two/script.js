@@ -19,16 +19,7 @@
     document.getElementById("pass-one").addEventListener("keyup",function(){
         let nbwords = document.getElementById("pass-one").value;
         console.log(nbwords);
-        // if(nbwords.inputType == "insertText"){
-            
-        //     mdp = mdp + nbwords.data;
-        //     console.log(mdp);
-        // }
-        // else if(nbwords.inputType == "deleteContentBackward"){
-            
-            
-        //     console.log(mdp);
-        // }
+     
 
         if(regex1.test(nbwords) === true){
             document.getElementById("validity").innerHTML = "ok";

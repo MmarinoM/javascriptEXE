@@ -41,6 +41,10 @@
     document.getElementById("run").addEventListener("click", function(){
         let numRandomBirds = Math.floor(Math.random() * birds.length);
         let numRandomAdj = Math.floor(Math.random() * adjectives.size);
+        // .map
+
+        //getsetvaluebyindex( set + mavariable) !!!!!!
+        
         const adjectivesArray = Array.from(adjectives);
         // console.log(numRandomAdj);
         // console.log(adjectivesArray);
